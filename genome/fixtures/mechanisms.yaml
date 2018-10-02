@@ -1,0 +1,263 @@
+- fields:
+    mechanism: Action Choice Cycling
+  model: genome.mechanism
+  pk: 1
+- fields:
+    mechanism: Action Choice Drafting
+  model: genome.mechanism
+  pk: 2
+- fields:
+    mechanism: Action Choice Timing
+  model: genome.mechanism
+  pk: 3
+- fields:
+    mechanism: Action Points
+  model: genome.mechanism
+  pk: 4
+- fields:
+    mechanism: Activation Points
+  model: genome.mechanism
+  pk: 5
+- fields:
+    mechanism: Advance Warning
+  model: genome.mechanism
+  pk: 6
+- fields:
+    mechanism: Aging
+  model: genome.mechanism
+  pk: 7
+- fields:
+    mechanism: Allocation
+  model: genome.mechanism
+  pk: 8
+- fields:
+    mechanism: Attribute Matching (Cards)
+  model: genome.mechanism
+  pk: 9
+- fields:
+    mechanism: Attribute Matching (Tiles)
+  model: genome.mechanism
+  pk: 10
+- fields:
+    mechanism: Automatic Hand Refill
+  model: genome.mechanism
+  pk: 11
+- fields:
+    mechanism: Betting (Escalation)
+  model: genome.mechanism
+  pk: 12
+- fields:
+    mechanism: Betting (Prediction)
+  model: genome.mechanism
+  pk: 13
+- fields:
+    mechanism: Binary Choice
+  model: genome.mechanism
+  pk: 14
+- fields:
+    mechanism: Blind Bidding
+  model: genome.mechanism
+  pk: 15
+- fields:
+    mechanism: Card Drafting
+  model: genome.mechanism
+  pk: 16
+- fields:
+    mechanism: Climbing
+  model: genome.mechanism
+  pk: 17
+- fields:
+    mechanism: Creative
+  model: genome.mechanism
+  pk: 18
+- fields:
+    mechanism: Customizable Deployment
+  model: genome.mechanism
+  pk: 19
+- fields:
+    mechanism: Deal-Making Phase
+  model: genome.mechanism
+  pk: 20
+- fields:
+    mechanism: Deck Management
+    description: 'Significantly, publicly alter the composition of your draw deck during the game.'
+  model: genome.mechanism
+  pk: 21
+- fields:
+    mechanism: Deck Seeding
+    description: 'Contribute cards face-down into a deck, such that you benefit directly from event outcomes, or indirectly through your partial knowledge of the deck composition (which you use to prepare for the outcome).'
+  model: genome.mechanism
+  pk: 22
+- fields:
+    mechanism: Deck Stacking
+    description: 'Gradually alter a set of outcomes such that random events favor you more -- "stack the deck" -- usually through publicly seeding and/or weeding a deck of common cards.'
+  model: genome.mechanism
+  pk: 23
+- fields:
+    mechanism: Demand Track
+  model: genome.mechanism
+  pk: 24
+- fields:
+    mechanism: Developmental Action
+  model: genome.mechanism
+  pk: 25
+- fields:
+    mechanism: Discard Pool
+  model: genome.mechanism
+  pk: 26
+- fields:
+    mechanism: Encounter
+  model: genome.mechanism
+  pk: 27
+- fields:
+    mechanism: Forced Move
+  model: genome.mechanism
+  pk: 28
+- fields:
+    mechanism: Guessing
+  model: genome.mechanism
+  pk: 29
+- fields:
+    mechanism: Loans (Money)
+  model: genome.mechanism
+  pk: 30
+- fields:
+    mechanism: Movement/Action Dice
+  model: genome.mechanism
+  pk: 31
+- fields:
+    mechanism: Multi-Choice Cards
+  model: genome.mechanism
+  pk: 32
+- fields:
+    mechanism: Multi-Choice Dice
+  model: genome.mechanism
+  pk: 33
+- fields:
+    mechanism: Open Auction
+  model: genome.mechanism
+  pk: 34
+- fields:
+    mechanism: Pathfinding
+  model: genome.mechanism
+  pk: 35
+- fields:
+    mechanism: Proposal/Judgment
+  model: genome.mechanism
+  pk: 36
+- fields:
+    mechanism: Puzzle Mat
+  model: genome.mechanism
+  pk: 37
+- fields:
+    mechanism: Random Short-Term Objective
+  model: genome.mechanism
+  pk: 38
+- fields:
+    mechanism: Secret Objectives
+  model: genome.mechanism
+  pk: 39
+- fields:
+    mechanism: Shooting
+  model: genome.mechanism
+  pk: 40
+- fields:
+    mechanism: Simultaneous Action Selection
+  model: genome.mechanism
+  pk: 41
+- fields:
+    mechanism: Simultaneous Orders
+  model: genome.mechanism
+  pk: 42
+- fields:
+    mechanism: Spatial Movement (Choice)
+  model: genome.mechanism
+  pk: 43
+- fields:
+    mechanism: Spatial Movement (Single)
+  model: genome.mechanism
+  pk: 44
+- fields:
+    mechanism: Spatial Placement (No Rotation, Card-Driven)
+  model: genome.mechanism
+  pk: 45
+- fields:
+    mechanism: Spatial Placement (No Rotation, Localized)
+  model: genome.mechanism
+  pk: 46
+- fields:
+    mechanism: Spatial Placement (No Rotation, Unrestricted)
+  model: genome.mechanism
+  pk: 47
+- fields:
+    mechanism: Spatial Placement (With Rotation, Localized)
+  model: genome.mechanism
+  pk: 48
+- fields:
+    mechanism: Spatial Placement (With Rotation, Unrestricted)
+  model: genome.mechanism
+  pk: 49
+- fields:
+    mechanism: Spatial Points
+  model: genome.mechanism
+  pk: 50
+- fields:
+    mechanism: Speculation (VPs)
+  model: genome.mechanism
+  pk: 51
+- fields:
+    mechanism: Steady Hands
+  model: genome.mechanism
+  pk: 52
+- fields:
+    mechanism: Supply and Demand
+  model: genome.mechanism
+  pk: 53
+- fields:
+    mechanism: Supply Track
+  model: genome.mechanism
+  pk: 54
+- fields:
+    mechanism: Surplus-Transfer Auction
+  model: genome.mechanism
+  pk: 55
+- fields:
+    mechanism: Take-That
+  model: genome.mechanism
+  pk: 56
+- fields:
+    mechanism: Tile Drafting
+  model: genome.mechanism
+  pk: 57
+- fields:
+    mechanism: Translation/Interpretation
+  model: genome.mechanism
+  pk: 58
+- fields:
+    mechanism: Trick Taking
+  model: genome.mechanism
+  pk: 59
+- fields:
+    mechanism: Upkeep
+  model: genome.mechanism
+  pk: 60
+- fields:
+    mechanism: Variable Turn Order
+  model: genome.mechanism
+  pk: 61
+- fields:
+    mechanism: Voting
+  model: genome.mechanism
+  pk: 62
+- fields:
+    mechanism: Worker Placement
+  model: genome.mechanism
+  pk: 63
+- fields:
+    mechanism: Challenge
+  model: genome.mechanism
+  pk: 64
+- fields:
+    mechanism: 3 Dice Attempts
+  model: genome.mechanism
+  pk: 65

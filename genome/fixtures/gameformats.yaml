@@ -1,0 +1,45 @@
+- fields:
+    code: IPII
+    game_format: Competitive
+  model: genome.gameformat
+  pk: 1
+- fields:
+    code: PPII
+    game_format: Competitive Collaborative
+  model: genome.gameformat
+  pk: 2
+- fields:
+    code: PIIP-1
+    game_format: Cooperative
+  model: genome.gameformat
+  pk: 3
+- fields:
+    code: PIIP-2
+    game_format: Cooperative Coordinative
+  model: genome.gameformat
+  pk: 4
+- fields:
+    code: IIPI-K
+    game_format: Partnerships
+  model: genome.gameformat
+  pk: 5
+- fields:
+    code: '**P*-H'
+    game_format: Hidden Loyalties
+  model: genome.gameformat
+  pk: 6
+- fields:
+    code: IPPI-K
+    game_format: 1vAll
+  model: genome.gameformat
+  pk: 7
+- fields:
+    code: IPPI-D
+    game_format: Alliances
+  model: genome.gameformat
+  pk: 8
+- fields:
+    code: PPPI-D
+    game_format: Collaborative Alliances
+  model: genome.gameformat
+  pk: 9

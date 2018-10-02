@@ -1,0 +1,34 @@
+{# Every page in this section should contain the recommendations form #}
+{% extends "base.html" %}
+{% load bootstrap3 %}
+
+{% block title %}
+<h2>Recommendations Based on Game Genomes</h2>
+More detail <a href="https://boardgamegeek.com/thread/581158/alternative-classification-board-games-long">here</a>
+{% endblock %}
+
+{% block content %}
+
+{% block above_the_form %}
+{% endblock %}
+
+<h3>Find recommendations for a board game!</h3>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'genome:retrieve_recommendations' %}" method="post" class="form">
+    {% csrf_token %}
+    {% bootstrap_form form layout='inline' %}
+    {% bootstrap_button "Find Similar Games!" button_type='submit' icon='search' button_class="btn-primary" %}
+</form>
+
+<h3>Or find recommendations across your collection!</h3>
+<form action="{% url 'genome:retrieve_user_collection' %}" method="post" class="form">
+    {% csrf_token %}
+    {% bootstrap_form user_form layout='inline' %}
+    {% bootstrap_button "Find Games I Should Like!" button_type='submit' icon='search' button_class="btn-primary" %}
+</form>
+
+{% block below_the_form %}
+{% endblock %}
+
+{% endblock %}

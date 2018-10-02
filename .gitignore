@@ -1,0 +1,5 @@
+*.pyc
+*.sqlite3
+genome/migrations
+test_dump.yaml
+my.cnf

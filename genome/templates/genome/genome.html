@@ -1,0 +1,24 @@
+{% extends 'genome/base_genome.html' %}
+{% load bootstrap3 %}
+
+{% block below_the_form %}
+<h3>Genres</h3>
+<div class="container">
+	{% for g in genres %}
+	<div id='{{ g }}' class="row">
+		<h4>{{ g.genre }}</h4>
+		<p>{{ g.description }}</p>
+	</div>
+	{% endfor %}
+</div>
+
+<h3>Mechanisms</h3>
+<div class="container">
+	{% for m in mechanisms %}
+	<div id='{{ m }}' class="row">
+		<h4>{{ m.mechanism }}</h4>
+		<p>{{ m.description }}</p>
+	</div>
+	{% endfor %}
+</div>
+{% endblock %}

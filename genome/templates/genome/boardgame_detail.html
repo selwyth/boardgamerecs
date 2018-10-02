@@ -1,0 +1,55 @@
+{% extends 'genome/base_genome.html' %}
+{% load bootstrap3 %}
+
+{% block title %}
+<h2>Recommendations for <i>{{ boardgame.title }}</i>:</h2>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6">
+			<h5>Genres</h5>
+			{{ boardgame.genre.all|join:", " }}
+		</div>
+		<div class="col-xs-6">
+			<h5>Mechanisms</h5>
+			{{ boardgame.mechanism.all|join:", " }}
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block above_the_form %}
+
+{% if boardgame %}
+{% url 'genome:index' as the_url %}
+<div class="container">
+	{% for game, score in recs %}
+	<div class="row">
+		<h3>{{ score }}% {{ game.title }}</h3>
+		{% spaceless %}
+		<div class="col-xs-6">
+			{% for g in game.genre.all %}
+				{% if g in boardgame.genre.all %}
+					<b>(G) <a href="{{ the_url }}#{{ g }}">{{ g }}</a></b><br>
+				{% else %}
+					(G) <a href="{{ the_url }}#">{{ g }}</a><br>
+				{% endif %}
+			{% endfor %}
+		</div>
+		<div class="col-xs-6">
+			{% for m in game.mechanism.all %}
+				{% if m in boardgame.mechanism.all %}
+					<b>(M) <a href="{{ the_url }}#{{ m }}">{{ m }}</a></b><br>
+				{% else %}
+					(M) <a href="{{ the_url }}#{{ m }}">{{ m }}</a><br>
+				{% endif %}
+			{% endfor %}
+		</div>
+		{% endspaceless %}
+	</div>
+	{% endfor %}
+</div>
+{% else %}
+<p>No board game selected</p>
+{% endif %}
+
+{% endblock %}

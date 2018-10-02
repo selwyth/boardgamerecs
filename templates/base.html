@@ -1,0 +1,22 @@
+{% load bootstrap3 %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block bootstrap3_content %}
+<div class="container">
+	<nav class="navbar navbar-default">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="{% url 'genome:genome' %}">Game Genomes</a>
+			<a class="navbar-brand">Collaborative Filtering</a>
+			<a class="navbar-brand">Text Mining</a>
+		</div>
+	</nav>
+
+	<h1>{% block title %}This is the title{% endblock %}</h1>
+
+	{% bootstrap_messages %}
+
+	{% block content %}This is the content{% endblock %}
+</div>
+{% endblock %}

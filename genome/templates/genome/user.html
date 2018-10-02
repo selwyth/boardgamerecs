@@ -1,0 +1,34 @@
+{% extends 'genome/base_genome.html' %}
+{% load bootstrap3 %}
+
+{% block title %}
+<h2>Recommendations for <i>{{ username }}</i>:</h2>
+{% endblock %}
+
+{% block above_the_form %}
+
+{% if username %}
+<div class="container">
+	{% for game, score in recs %}
+	<div class="row">
+		<h3>{{ score }}% {{ game.title }}</h3>
+		{% spaceless %}
+		<div class="col-xs-6">
+			{% for g in game.genre.all %}
+				(G) {{ g }}<br>
+			{% endfor %}
+		</div>
+		<div class="col-xs-6">
+			{% for m in game.mechanism.all %}
+				(M) {{ m }}<br>
+			{% endfor %}
+		</div>
+		{% endspaceless %}
+	</div>
+	{% endfor %}
+</div>
+{% else %}
+<p>No BGG user selected</p>
+{% endif %}
+
+{% endblock %}

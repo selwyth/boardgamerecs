@@ -1,0 +1,49 @@
+#!/usr/bin/env python
+import argparse
+import math
+import pandas as pd
+import yaml
+
+import os
+from django.core.wsgi import get_wsgi_application
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'boardgamerecs.settings'
+application = get_wsgi_application()
+
+from genome.models import Genre, Mechanism, GameFormat
+
+
+def main(filepath):
+    df = pd.read_csv(filepath)
+
+    entries = []
+    for i, row in df.iterrows():
+        fields = {}
+        fields['title'] = row['Name']
+        fields['bgg_id'] = int(row['Game_ID'])
+        if row['Family'] == row['Family']:
+            fields['board_game_family'] = row['Family']
+        # fields['game_format'] = GameFormat.objects.get(game_format=row['GameFormat']).id if row['GameFormat'] == row['GameFormat'] else 1
+
+        genres = [Genre.objects.get(genre=row[g]).id for g in ['Genre1', 'Genre2', 'Genre3', 'Genre4', 'Genre5'] if row[g] == row[g]]
+        fields['genre'] = genres
+
+        mechanisms = [Mechanism.objects.get(mechanism=row[m]).id for m in ['Mech1', 'Mech2', 'Mech3', 'Mech4', 'Mech5'] if row[m] == row[m]]
+        fields['mechanism'] = mechanisms
+
+        entry = {}
+        entry['model'] = 'genome.boardgame'
+        entry['pk'] = i + 1
+        entry['fields'] = fields
+        entries.append(entry)
+
+    with open('genome/fixtures/initial_data.yaml', 'w') as f:
+        yaml.dump(entries, f, default_flow_style=False)
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Produce the fixtures for updating the genome database')
+    parser.add_argument('filepath', help='path to the downloaded csv file')
+
+    args = parser.parse_args()
+    main(args.filepath)

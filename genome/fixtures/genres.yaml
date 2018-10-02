@@ -1,0 +1,148 @@
+- fields:
+    genre: Alignment
+  model: genome.genre
+  pk: 1
+- fields:
+    genre: Area Enclosure
+  model: genome.genre
+  pk: 2
+- fields:
+    genre: Area Influence
+    description: "Control individual areas/regions (by leaving 1 unit or placing a control token). Only one piece allowed in each space. No concept of a direct battle since enemy pieces can't move/place into your space."
+  model: genome.genre
+  pk: 3
+- fields:
+    genre: Attrition
+  model: genome.genre
+  pk: 4
+- fields:
+    genre: Breakout
+  model: genome.genre
+  pk: 5
+- fields:
+    genre: Capture
+    description: "Trap and eliminate your opponent's objective piece through superior deployment and positioning of units. Pieces have heterogeneous abilities. Only one piece in each space. When enemy piece comes in, a resolution (often deterministic) determines who wins."
+  model: genome.genre
+  pk: 6
+- fields:
+    genre: Character Development
+  model: genome.genre
+  pk: 7
+- fields:
+    genre: Collusion
+  model: genome.genre
+  pk: 8
+- fields:
+    genre: Connection
+  model: genome.genre
+  pk: 9
+- fields:
+    genre: Deduction (Cat/Mouse)
+  model: genome.genre
+  pk: 10
+- fields:
+    genre: Deduction (Elimination)
+  model: genome.genre
+  pk: 11
+- fields:
+    genre: Deduction (Signaling)
+  model: genome.genre
+  pk: 12
+- fields:
+    genre: Delivery
+  model: genome.genre
+  pk: 13
+- fields:
+    genre: Dexterity
+  model: genome.genre
+  pk: 14
+- fields:
+    genre: Duel/Comparison
+  model: genome.genre
+  pk: 15
+- fields:
+    genre: Efficiency Engine
+  model: genome.genre
+  pk: 16
+- fields:
+    genre: Induction
+  model: genome.genre
+  pk: 17
+- fields:
+    genre: Investment
+  model: genome.genre
+  pk: 18
+- fields:
+    genre: Area Majority
+    description: "Have the most (or 2nd/3rd/etc) # of pieces in multiple spatial arenas of competition in order to score VPs. Pieces belonging to different players can coexist, and there is little concept of 'killing' each other"
+  model: genome.genre
+  pk: 19
+- fields:
+    genre: Negotiation (Diplomacy)
+  model: genome.genre
+  pk: 20
+- fields:
+    genre: Negotiation (Trading)
+  model: genome.genre
+  pk: 21
+- fields:
+    genre: Network Building
+  model: genome.genre
+  pk: 22
+- fields:
+    genre: Objectives Race
+  model: genome.genre
+  pk: 23
+- fields:
+    genre: Payment Timing
+  model: genome.genre
+  pk: 24
+- fields:
+    genre: Psychological
+  model: genome.genre
+  pk: 25
+- fields:
+    genre: Recognition/Speed
+  model: genome.genre
+  pk: 26
+- fields:
+    genre: Risk Management
+  model: genome.genre
+  pk: 27
+- fields:
+    genre: Risk Valuation
+  model: genome.genre
+  pk: 28
+- fields:
+    genre: Shedding
+  model: genome.genre
+  pk: 29
+- fields:
+    genre: Steering
+  model: genome.genre
+  pk: 30
+- fields:
+    genre: Tactical War
+  model: genome.genre
+  pk: 31
+- fields:
+    genre: Territorial Conquest
+    description: 'Control individual areas/regions (often by leaving 1 unit or placing a control token), and gain advantages by doing so. There can be multiple pieces belonging to one player within each area to defend it, and the moment enemy pieces come in, a battle (often stochastic) is simulated to determine the victor and who has to retreat (with some exceptions where they can stay and coexist instead e.g. Nexus Ops).'
+  model: genome.genre
+  pk: 32
+- fields:
+    genre: Tile Laying
+  model: genome.genre
+  pk: 33
+- fields:
+    genre: Trick Scoring
+  model: genome.genre
+  pk: 34
+- fields:
+    genre: Trivia/Word
+  model: genome.genre
+  pk: 35
+- fields:
+    genre: Melding
+  model: genome.genre
+  pk: 36
